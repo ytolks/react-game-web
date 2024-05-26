@@ -22,9 +22,15 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+Project REACT-GAME-WEB steps
+
+1. npm create vite@latest <project_name> || npm create-react-app@latest <project_name>
+2. npm i
+3. Chakra UI installation npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion + setup provider by importing ChakraProvider component in main.tsx
